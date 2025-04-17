@@ -1,25 +1,20 @@
-import React, { useEffect } from 'react';
-import HomePage from './components/HomePage';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Projects from './components/Projects.jsx';
+import Home from './components/HomePage.jsx';
+import About from './components/About.jsx'
+import SimpleCalculatorDetail from './components/projectDetails/SimpleCalculatorDetail.jsx';
 
 const App = () => {
-  useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-    }
-    
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-      if (event.matches) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    });
-  }, []);
-  
   return (
-    <div className="font-sans">
-      <HomePage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects/simple-calculator" element={<SimpleCalculatorDetail />} />
+      </Routes>
+    </Router>
   );
 };
 
