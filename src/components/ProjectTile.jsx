@@ -8,7 +8,6 @@ const ProjectTile = ({ project, onClick, index }) => {
       onClick={() => onClick(project.path)}
     >
       <div className="h-48 bg-gray-200 dark:bg-gray-700 relative">
-        {/* Image placeholder - in a real app, you'd use actual project images */}
         <div className="absolute inset-0 flex items-center justify-center text-gray-500 dark:text-gray-400">
           <span className="text-lg font-medium">{project.title} Preview</span>
         </div>
