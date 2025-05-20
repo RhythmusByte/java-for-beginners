@@ -1,3 +1,5 @@
+> Development is currently on a brief pause. 
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=26&pause=1000&color=4f46e5&center=true&vCenter=true&width=500&lines=Java+for+Beginners;Project-Based+Learning;Interactive+Coding+Environment" alt="Typing SVG">
