@@ -1,4 +1,4 @@
-> Development is currently on a brief pause. 
+> Development is currently on a hiatus. 
 
 <div align="center">
 
